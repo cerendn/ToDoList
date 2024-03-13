@@ -11,10 +11,9 @@
 <body>
     <div class="container">
         
-        <div class="inpt">
-            <input type="text" placeholder="Add a new task">
-            <button onclick ="addTask()"> Add </button>
-        </div>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button onclick="addTask()"> Add </button>
+       
         <div class="controls">
             <div class="filters">
                 <span class="active" id="all">All</span>
@@ -24,7 +23,7 @@
 
             <button class="clear-btn">Clear All</button>
         </div>
-        <ul class="task-box"></ul>
+        <ul class="taskBox"></ul>
     </div>
 
 </body>
