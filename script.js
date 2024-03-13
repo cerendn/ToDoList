@@ -7,7 +7,7 @@ function addTask() {
     if(taskValue !== ""){
         const listItem = document.createElement("li");
         listItem.textContent = taskValue;
-        taskBox.appendChild(listItem);
+        taskBox.insertBefore(listItem, taskBox.firstChild);
         taskInput.value = "";
     }
 }
