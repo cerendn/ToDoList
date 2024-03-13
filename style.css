@@ -15,25 +15,9 @@ body{
 .container{
     width: 400px;
     margin: 0 auto;
-    border: 2px solid fuchsia;
     padding: 20px;
     border-radius: 5px;
+
     
     
-}
-input{
-    width: 300px;
-    padding: 5px;
-    margin-right: 0;
-}
-.controls{
-    margin-top: 40px;
-   
-}
-.clear-btn{
-    margin-top: 20px;
-}
-.filters span{
-    cursor: pointer;
-    margin-right: 40px;
 }
