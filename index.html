@@ -4,28 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo-List</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-<link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e7ebc2fc39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-<div class="container">
-    <div id="newtask">
-        <input type="text" placeholder="Yapılacaklar...">
-        <button id="push">Ekle</button>
+    <header>
+        <h2>Yapılacaklar</h2>
+    </header>
+    <form action="">
+        <input type="text" class="todoInput" maxlength="40" />
+        <button class="todoButton">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="options">
+            <select name="todos" id="filter">
+                <option value="all">Hepsi</option>
+                <option value="completed">Tamamlananlar</option>
+                <option value="uncompleted">Devam Edenler</option>
+            </select>
+        </div>
+    </form>
+    <div class="todoContainer">
+        <ul class="todoList"></ul>
     </div>
-    <div id="tasks"></div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
-
-
+    <script src="/script.js"></script>
 </body>
 
 </html>
