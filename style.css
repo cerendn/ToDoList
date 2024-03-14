@@ -27,7 +27,12 @@ form input,
 form button {
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     font-size: 1.8rem;
+    background-color: antiquewhite;
     border: none;
+}
+#filter{
+    margin-left: 5px;
+    border: 1px solid blueviolet;
 }
 
 form button {
@@ -48,3 +53,4 @@ form button:hover {}
     min-width: 30%;
     list-style: none;
 }
+
