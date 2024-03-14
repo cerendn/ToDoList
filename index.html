@@ -11,25 +11,27 @@
 </head>
 
 <body>
-    <header>
-        <h2 style="color: blueviolet;"> ToDoList</h2>
-    </header>
-    
-    <form action="">
-        <input type="text" class="todoInput" maxlength="40" />
-        <button class="todoButton">
-            <i style="color: rgb(182, 112, 247);"    class="fas fa-plus-square"></i>
-        </button>
-        <div class="options">
-            <select name="todos" id="filter">
-                <option value="all">Hepsi</option>
-                <option value="completed">Bitenler</option>
-                <option value="uncompleted">Devam Edenler</option>
-            </select>
+    <div class="background">
+        <header>
+            <h2> ToDoList</h2>
+        </header>
+
+        <form action="">
+            <input type="text" class="todoInput" maxlength="40" />
+            <button class="todoButton">
+                <i style="color: rgb(245, 133, 234);" class="fas fa-plus-square"></i>
+            </button>
+            <div class="options">
+                <select name="todos" id="filter">
+                    <option value="all">Hepsi</option>
+                    <option value="completed">Bitenler</option>
+                    <option value="uncompleted">Devam Edenler</option>
+                </select>
+            </div>
+        </form>
+        <div class="todoContainer">
+            <ul class="todoList"></ul>
         </div>
-    </form>
-    <div class="todoContainer">
-        <ul class="todoList"></ul>
     </div>
     <script src="/script.js"></script>
 </body>

@@ -6,21 +6,39 @@
 }
 
 body {
-    min-height: 100vh;
-    margin-bottom: 2rem;
     
+    margin-bottom: 2rem;
+
 }
 
 header {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 15px rgb(255, 186, 245);
+    color: rgb(251, 204, 146);
 }
+
+
 
 header,
 form {
-    min-height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .background {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background {
+        background-size: cover;
+    }
 }
 
 form input,
@@ -30,9 +48,10 @@ form button {
     background-color: antiquewhite;
     border: none;
 }
-#filter{
+
+#filter {
     margin-left: 5px;
-    border: 1px solid blueviolet;
+    border: 1px solid rgb(254, 93, 230);
 }
 
 form button {
@@ -47,6 +66,7 @@ form button:hover {}
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .todoList {
@@ -54,3 +74,13 @@ form button:hover {}
     list-style: none;
 }
 
+.background {
+    background: url(/teddy.jpg)no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
